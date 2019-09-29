@@ -1,0 +1,14 @@
+.mainBlock
+{
+	position: absolute;
+	top : 100px;
+	left: 400px;
+	right: 50px;
+	bottom: 50px;
+}
+.block1
+{
+	position: absolute;
+	top: 100px;
+	left: 60px;
+}

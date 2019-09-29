@@ -1,0 +1,26 @@
+.mainBlock
+{
+	position: absolute;
+	top : 100px;
+	left: 400px;
+	right: 50px;
+	bottom: 50px;
+}
+.block1
+{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+}
+.block2
+{
+	position: absolute;
+	top: 23px;
+	left: 320px;
+}
+.btn_set
+{
+	position: absolute;
+	top: 240px;
+	left: 220px
+}
