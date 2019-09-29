@@ -1,22 +1,30 @@
 <html>
 <head>
 	<title>Mohit's Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/onlinePortfolio.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/onlinePortfolio.css"/>
 </head>
-<body>
-	<div class = "mainBlock"> 
-		<img src="img/online-portfolio.png" alt="Online Portfolio" class="imgPortfolio" id="img1" onmouseover="hoverOnImg()" onmouseout="hoverOffImg()" >
-		<div class="block1">
-			<h2>Online Portfolio</h2>
-			<p>
-			To Showcase skills and projects<br>
-			</p>
-		</div>
-		<div class="btn_set">
-			<a href="projects.html"><button>Back to Project List</button></a>
-			<a href="index.html" style="margin: 30px;"><button>Homepage</button></a>
-		</div>
-	</div>
+<body background="img/background/img1.jpeg">
+	<div class="container">	
+		<div class="row" style="min-height: 100px;"></div>
+		<div class="row" style="background-color: rgba(255,255,255,0.7); padding: 20px;">
+			<div class="col-md-6" align="center">
+					<img src="img/online-portfolio.png" alt="Online Portfolio" class="img-fluid" style="height: 200px; width: 200px" id="img1" onmouseover="hoverOnImg()" onmouseout="hoverOffImg()">
+			</div>
+			<div class="col-md-6">
+					<h2>Online Portfolio</h2>
+					<p>
+					To Showcase skills and projects<br>
+					</p>
+				
+					<a href="projects.html"><button class="btn btn-primary">Back to Project List</button></a>
+					<a href="index.html" style="margin: 30px;"><button class="btn btn-primary">Homepage</button></a>
+			</div>
+		</div>	
+	</div>	
 </body>
 </html>
