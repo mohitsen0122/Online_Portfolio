@@ -7,16 +7,31 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<title>Mohit's Portfolio</title>
 </head>
-<body background="img/background/img1.jpeg">
+<body class="responsive" background="img/background/img1.jpg">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="index.html">Mohit's Profile</a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li><a href="online_portfolio.html">Online PortFolio</a></li>
+			  <li><a href="#">Project 2</a></li>
+			  <li><a href="#">Project 3</a></li>
+			</ul>
+		</div>
+	</nav>
+  
 	<div class="container">
 
 		<div class="row" style="min-height: 100px;">
 		</div>
 
-		<div class="row" >
+		<div class="row"  >
 			<div class="col-md-3"></div>
-			<div class="col-md-6" align="center">
-				<div class="row" style="background-color: rgba(255,255,255,0.7); padding: 20px;">
+			<div class="col-md-6" align="center" id="main_form" onmouseover="onHoverInImage('main_form')"  onmouseout="onHoverOutImage('main_form')">
+				<div class="row" style="">
+					<div style="padding: 5px ">
 					<div class="col-md-6">
 						<img class="img img-rounded" src="img/profile_img.png" alt="Mohit" >
 					</div>
@@ -34,8 +49,20 @@
 					</div>
 				</div>	
 			</div>
+		</div>
 			<div class="col-md-3"></div>
 		</div>
 	</div>
+	<script type="text/javascript">
+			function onHoverInImage(imageId) {
+				var eleImage = document.getElementById(imageId);
+				eleImage.style = "background-color: rgba(255,255,255,0.9); ";
+			}
+			function onHoverOutImage(imageId) {
+				var eleImage = document.getElementById(imageId);
+				eleImage.style = "background-color: rgba(255,255,255,0.5);";
+			}
+
+	</script>
 </body>
 </html>
