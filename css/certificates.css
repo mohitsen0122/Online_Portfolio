@@ -2,6 +2,11 @@
 	text-align: center;
 	background-color: rgba(255,255,255,1);
 }
+#navBarPic {
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+}
 #certificateForm {
 	background-color: rgba(255, 255, 255, 1);
 	padding: 5px 40px 40px 0px;
@@ -41,23 +46,42 @@
 	border-radius: 800px;
 	animation-name: ball;
 	animation-duration: 6s;
+	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 @keyframes ball {
 	0% {
 		maring-top: 0px;
 	}
-	25% {
+	12% {
 		background-color: linear-gradient(55deg, white, gray);
 		margin-top: 200px;
 	}
-	50% {
+	24% {
 		background: linear-gradient(60deg, brown, yellow);
 		margin-top: 400px;
 	}
-	100% {
-		background-color: linear-gradient(15deg, pink, orange);
+	48% {
+		background-color: linear-gradient(55deg, white, gray);
 		margin-top: 630px;
 	}	
+
+	52% {
+		maring-top: 540px;
+		background-color: linear-gradient(55deg, white, gray);
+	}
+	63% {
+		background-color: linear-gradient(55deg, white, gray);
+		margin-top: 400px;
+	}
+	78% {
+		background: linear-gradient(60deg, brown, yellow);
+		margin-top: 200px;
+	}
+	100% {
+		background-color: linear-gradient(55deg, white, gray);
+		margin-top: 0px;
+	}
 }
+
 
