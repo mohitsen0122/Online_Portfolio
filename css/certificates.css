@@ -5,4 +5,59 @@
 #certificateForm {
 	background-color: rgba(255, 255, 255, 1);
 	padding: 5px 40px 40px 0px;
+	border-radius: 15px;
+	border-style: solid;
 }
+#certificateBorder {
+	border-width: 50px;
+	border-color: rgba(190, 190, 190, 1) !important;
+}
+#sideBar {
+	border-radius: 20px;
+	position: relative;
+    width: 10%;
+    height: 625px;
+    margin:  50 auto;
+	background: 
+		repeating-linear-gradient(
+    	45deg,
+    	yellow 0px,
+      	yellow 40px,
+      	black 40px,
+      	black 80px
+    );
+}
+#favFont{
+    font-family: Lobster, monospace;
+    text-decoration: underline;
+    text-align: center;
+    color:  white;
+}
+#ballOne {
+	background: linear-gradient(45deg, red, blue);
+	height: 40px;
+	width: 40px;
+	margin: center; 
+	border-radius: 800px;
+	animation-name: ball;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+@keyframes ball {
+	0% {
+		maring-top: 0px;
+	}
+	25% {
+		background-color: linear-gradient(55deg, white, gray);
+		margin-top: 200px;
+	}
+	50% {
+		background: linear-gradient(60deg, brown, yellow);
+		margin-top: 400px;
+	}
+	100% {
+		background-color: linear-gradient(15deg, pink, orange);
+		margin-top: 630px;
+	}	
+}
+
