@@ -1,0 +1,29 @@
+<div class="container">
+		<div class="row" style="min-height: 100px">
+		</div>
+
+		<div class="row" style="padding: 20px;">
+			<div class="col-md-4" align="center">
+				<a href="#" title="Onlie-Portfolio-Project">
+					<img src="img/portfolio.png" onmouseout="onHoverOutImage('portfolioOnline')" onmouseover="onHoverInImage('portfolioOnline')" onclick="loadDoc('portfolio')" class=""  id="portfolioOnline">
+				</a>
+				<label class="btn-success" style="width: 30%;"> Portfolio </label>
+			</div>
+			<div class="col-md-4" align="center" >
+				<a href="#">
+					<img src="img/portfolio.png"  onmouseout="onHoverOutImage('project2')" onmouseover="onHoverInImage('project2')" class=""  id="project2">
+				</a>
+				<label class="btn-success" style="width: 30%;"> Project 2 </label>
+			</div>
+			<div class="col-md-4" align="center">
+				<a href="#">
+					<img src="img/portfolio.png"  onmouseout="onHoverOutImage('project3')" onmouseover="onHoverInImage('project3')" class=""  id="project3" >
+				</a>
+				<label class="btn-success" style="width: 30%;"> Project 3 </label>
+			</div>
+		</div>	
+		<div class="row" align="center">
+			<a href="#"><button  class="btn btn-primary" onclick="loadDoc('mainPage')" style="margin: 20px">Homepage</button>
+				</a>
+		</div>
+	</div>

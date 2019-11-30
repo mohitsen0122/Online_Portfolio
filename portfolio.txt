@@ -1,0 +1,17 @@
+<div class="container">	
+		<div class="row" style="min-height: 100px;"></div>
+		<div class="row" style="background-color: rgba(255,255,255,0.7); padding: 20px;">
+			<div class="col-md-6" align="center">
+					<img src="img/online-portfolio.png" alt="Online Portfolio" class="img-fluid" style="height: 200px; width: 200px" id="img1" onmouseover="hoverOnImg()" onmouseout="hoverOffImg()">
+			</div>
+			<div class="col-md-6" align="center">
+					<h2>Online Portfolio</h2>
+					<p>
+					To Showcase skills and projects<br>
+					</p>
+				
+					<a href="#"><button onclick="loadDoc('projects')" class="btn btn-primary">&nbsp;&nbsp;Projects&nbsp;&nbsp;</button></a>
+					<a href="#" style="margin: 30px;"><button onclick="loadDoc('mainPage')" class="btn btn-primary">Homepage</button></a>
+			</div>
+		</div>	
+	</div>
