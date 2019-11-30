@@ -4,9 +4,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/certificates.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<title>Mohit's Portfolio</title>
+	<title></title>
 </head>
 <body class="responsive" background="img/background/img1.jpg">
 	<nav class="navbar navbar-inverse">
@@ -14,11 +15,11 @@
 			<div class="navbar-header">
 			  <a class="navbar-brand" href="#"><img onclick="loadDoc('mainPage')" alt="Homepage" id="navBarPic" src="img/profile_img.png"></a>
 			</div>
-			<ul class="nav navbar-nav">
-			  <li class="active"><a href="#">Home</a></li>
-			  <li><a href="#" onclick="loadDoc('portfolio')">Online PortFolio</a></li>
-			  <li><a href="#">Project 2</a></li>
-			  <li><a href="#">Project 3</a></li>
+			<ul id="navBar" class="nav navbar-nav">
+			  <li><a href="#" class ="btn" onclick="loadDoc('mainPage')">Home</a></li>
+			  <li><a href="#" id ="btn" onclick="loadDoc('portfolio')">Online PortFolio</a></li>
+			  <li><a href="#" id ="btn">Project 2</a></li>
+			  <li><a href="#" id ="btn">Project 3</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -39,19 +40,25 @@
 				};
 				if(pageName == "mainPage") {
 					xHttp.open("GET","main.txt", true);
+					document.title = "Online Portfolio";
 				} else if(pageName == "profile") {
 					xHttp.open("GET","profile.txt", true);
+					document.title = "Profile";
 				} else if(pageName == "certificates") {
 					xHttp.open("GET","certificates.txt", true);
+					document.title = "Achievements";
 				} else if(pageName == "projects") {
 					xHttp.open("GET","projects.txt", true);
+					document.title = "Projects";
 				} else if(pageName == "portfolio") {
 					xHttp.open("GET","portfolio.txt", true);
-				} 
-				 
-
+					document.title = "Porfolio";
+				}
 				xHttp.send();
 			}
+
+			
+
 
 			function onHoverInImage(imageId) {
 				var eleImage = document.getElementById(imageId);
@@ -62,6 +69,16 @@
 				eleImage.style = "background-color: rgba(255,255,255,0.2);";
 			}
 			loadDoc("mainPage");
+			
+			var navHeader = document.getElementById("navBar");
+			var btns = navHeader.getElementById("btn");
+			for(var i = 0; i < btns.length; i++){
+				btns[i].addEventListner("click", function() {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active","");
+				this.className +=" active";
+				});
+			}
 	</script>
 </body>
 </html>
