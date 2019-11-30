@@ -10,16 +10,16 @@
 	<title></title>
 </head>
 <body class="responsive" background="img/background/img1.jpg">
-	<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
 			  <a class="navbar-brand" href="#"><img onclick="loadDoc('mainPage')" alt="Homepage" id="navBarPic" src="img/profile_img.png"></a>
 			</div>
 			<ul id="navBar" class="nav navbar-nav">
-			  <li><a href="#" class ="btn" onclick="loadDoc('mainPage')">Home</a></li>
-			  <li><a href="#" id ="btn" onclick="loadDoc('portfolio')">Online PortFolio</a></li>
-			  <li><a href="#" id ="btn">Project 2</a></li>
-			  <li><a href="#" id ="btn">Project 3</a></li>
+			  <li id="monuEl1"><a href="#" class ="btn" onclick="loadDoc('mainPage')">Home</a></li>
+			  <li id="monuEl2"><a href="#" id ="btn" onclick="loadDoc('portfolio')">Online PortFolio</a></li>
+			  <li id="monuEl3"><a href="#" id ="btn" onclick="loadDoc('certificates')">Achievements</a></li>
+			  <li id="monuEl4"><a href="#" id ="btn" onclick="loadDoc('projects')">Project</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -38,28 +38,45 @@
 						document.getElementById("main").innerHTML = this.responseText;
 					}
 				};
+				var el1 = document.getElementById("monuEl1");
+				var el2 = document.getElementById("monuEl2");
+				var el3 = document.getElementById("monuEl3");
+				var el4 = document.getElementById("monuEl4");
 				if(pageName == "mainPage") {
-					xHttp.open("GET","main.txt", true);
 					document.title = "Online Portfolio";
+					el1.className = "active";
+					el2.className = "";
+					el3.className = "";
+					el4.className = "";
+					xHttp.open("GET","main.txt", true);
 				} else if(pageName == "profile") {
 					xHttp.open("GET","profile.txt", true);
 					document.title = "Profile";
 				} else if(pageName == "certificates") {
 					xHttp.open("GET","certificates.txt", true);
 					document.title = "Achievements";
+					el3.className = "active";
+					el4.className = "";
+					el2.className = "";
+					el1.className = "";
 				} else if(pageName == "projects") {
 					xHttp.open("GET","projects.txt", true);
 					document.title = "Projects";
+					el4.className = "active";
+					el3.className = "";
+					el2.className = "";
+					el1.className = "";
 				} else if(pageName == "portfolio") {
 					xHttp.open("GET","portfolio.txt", true);
 					document.title = "Porfolio";
+					el2.className = "active";
+					el1.className = "";
+					el3.className = "";
+					el4.className = "";
 				}
 				xHttp.send();
 			}
-
 			
-
-
 			function onHoverInImage(imageId) {
 				var eleImage = document.getElementById(imageId);
 				eleImage.style = "background-color: rgba(255,255,255,0.9); ";
@@ -69,7 +86,7 @@
 				eleImage.style = "background-color: rgba(255,255,255,0.2);";
 			}
 			loadDoc("mainPage");
-			
+/*
 			var navHeader = document.getElementById("navBar");
 			var btns = navHeader.getElementById("btn");
 			for(var i = 0; i < btns.length; i++){
@@ -79,6 +96,7 @@
 				this.className +=" active";
 				});
 			}
+*/
 	</script>
 </body>
 </html>
