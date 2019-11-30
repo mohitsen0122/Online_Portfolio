@@ -4,25 +4,37 @@
 }
 #navBarPic {
 	height: 30px;
-	width: 30px;
+	width: auto;
 	border-radius: 50px;
 }
+#certificateSizePartOne {
+	height: 210px;
+	max-width: 111%;
+}
+#certificateSizePartTwo {
+	height: 210px;
+	max-width:  108%
+
+}
 #certificateForm {
+
 	background-color: rgba(255, 255, 255, 1);
-	padding: 5px 40px 40px 0px;
-	border-radius: 15px;
+	padding: 5px 40px 60px 5px;
+	height: 500px;
+	width: 100%;
+	border-radius: 20px;
 	border-style: solid;
 }
 #certificateBorder {
-	border-width: 50px;
-	border-color: rgba(190, 190, 190, 1) !important;
+	
+	border-color: rgba(190, 190, 190, 1) ;
 }
 #sideBar {
 	border-radius: 20px;
 	position: relative;
-    width: 10%;
-    height: 625px;
-    margin:  50 auto;
+    width: auto;
+    height: 20px;
+    margin: 50px auto;
 	background: 
 		repeating-linear-gradient(
     	45deg,
@@ -43,44 +55,39 @@
 	height: 40px;
 	width: 40px;
 	margin: center; 
-	border-radius: 800px;
+	border-radius: 50%;
 	animation-name: ball;
-	animation-duration: 6s;
+	animation-duration: 10s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 @keyframes ball {
 	0% {
-		maring-top: 0px;
+		margin-left: -400px;
 	}
 	12% {
 		background-color: linear-gradient(55deg, white, gray);
-		margin-top: 200px;
+		margin-left: -230px;
 	}
 	24% {
 		background: linear-gradient(60deg, brown, yellow);
-		margin-top: 400px;
+		margin-left: 120px;
 	}
-	48% {
+	45% {
 		background-color: linear-gradient(55deg, white, gray);
-		margin-top: 630px;
-	}	
-
-	52% {
-		maring-top: 540px;
-		background-color: linear-gradient(55deg, white, gray);
+		margin-left: 360px;
 	}
-	63% {
-		background-color: linear-gradient(55deg, white, gray);
-		margin-top: 400px;
-	}
-	78% {
+	68% {
 		background: linear-gradient(60deg, brown, yellow);
-		margin-top: 200px;
+		margin-left: 200px;
+	}
+	80% {
+		background-color: linear-gradient(55deg, white, gray);
+		margin-left: 70px;
 	}
 	100% {
 		background-color: linear-gradient(55deg, white, gray);
-		margin-top: 0px;
+		margin-left: 0px;
 	}
 }
 
