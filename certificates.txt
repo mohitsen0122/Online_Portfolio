@@ -28,7 +28,7 @@
                 <div id="ballOne"></div>
                 <div id="certificateForm">
                     <div id="certificateBorder" >
-                        <img id="certificateSizePartTwo" src="img/Hackerrank.jpg">	
+                        <img id="certificateSizePartTwo" src="img/Hackerrank.png">	
                     </div>	
                 </div>
             </div>	
@@ -43,7 +43,7 @@
                 <div id="ballOne"></div>
                 <div id="certificateForm">
                     <div id="certificateBorder" >
-                        <img id="certificateSizePartOne" src="img/j2ee.jpg">	
+                        <img id="certificateSizePartOne" src="img/j2ee.png">	
                     </div>	
                 </div>
             </div>	
