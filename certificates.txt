@@ -26,7 +26,7 @@
             <div class="col-md-6" class ="certificateColumn" align="center" id="main_form" >
                 <div id="sideBar"></div>
                 <div id="ballOne"></div>
-                <div id="certificateForm">
+                <div id="certificateFormDDDDDD">
                     <div id="certificateBorder" >
                         <img id="certificateSizePartTwo" src="img/Hackerrank.png">	
                     </div>	
@@ -41,7 +41,7 @@
             <div class="col-md-6" class ="certificateColumn" align="center" id="main_form" >
                 <div id="sideBar"></div>
                 <div id="ballOne"></div>
-                <div id="certificateForm">
+                <div id="certificateFormDDDDDD">
                     <div id="certificateBorder" >
                         <img id="certificateSizePartOne" src="img/j2ee.png">	
                     </div>	
